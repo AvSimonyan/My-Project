@@ -1,0 +1,614 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Register | iProperty</title>
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <link href="../css.css?family=Varela+Round" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/utility.css">
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+
+    <!-- THEME COLOR -->
+    <link href="/css/colors/blue.css" type="text/css" media="all" rel="stylesheet" id="colors">
+
+    <!-- MAIN MENU -->
+    <link rel="stylesheet" type="text/css" href="/vendors/menu/css/bootstrap-extended.css">
+
+    <!-- OWL CAROUSEL SLIDER -->
+    <link rel="stylesheet" type="text/css" href="/vendors/owl.carousel/css/owl.carousel.min.css">
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" type="text/css" href="/vendors/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/slick/slick-theme.css">
+
+    <!-- FANCY BOX -->
+    <link rel="stylesheet" type="text/css" href="/vendors/fancybox/jquery.fancybox.min.css">
+
+    <!-- FILE-UPLOADER -->
+    <link rel="stylesheet" href="/vendors/fileuploader/css/jquery.fileuploader.css" media="all">
+    <link rel="stylesheet" href="/vendors/fileuploader/css/jquery.fileuploader-theme-thumbnails.css" media="all">
+
+    <!-- Begin: HTML5SHIV FOR IE8 -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/vendors/js/html5shiv.js"></script>
+      <script src="/vendors/js/respond.js"></script>
+    <![endif]-->
+    <!-- end: HTML5SHIV FOR IE8 -->
+</head>
+
+<body data-menu="header-main-menu" class="bg-white body-main-menu header-main-menu">
+
+    <!--
+    #################################
+        - Begin: HEADER -
+    #################################
+    -->
+    <header class="main-header bg-light-2 box-shadow-1">
+
+        <!-- TOGGLE -->
+        <a href="#" class="nav-link nav-menu-main menu-toggle btn btn-base rounded-0">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- /TOGGLE -->
+
+        <!-- TOPBAR -->
+        <div class="inner-header d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2">
+                        <!-- LOGO -->
+                        <a class="navbar-brand logo" href="index.html">
+                            <img class="full-width max-width-130-sm" alt="iProperty" src="/images/logo.png">
+                        </a>
+                        <!-- /LOGO -->
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 text-right">
+                        <div class="extra-info">
+                            <ul>
+                                <li class="m-top-5 hidden-xs hidden-sm hidden-md">
+                                    <i class="fa fa-phone text-base text-size-30"></i>
+                                    <div class="text">
+                                        <div class="text-top text-weight-400 text-muted text-size-13">
+                                            CALL US
+                                        </div>
+                                        <div class="text-bottom text-bold-700 text-black">
+                                            (123) 456 7890
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-top-5 hidden-xs hidden-sm hidden-md">
+                                    <i class="fa fa-envelope-o text-base text-size-30"></i>
+                                    <div class="text">
+                                        <div class="text-top text-bold-400 text-muted text-size-13">
+                                            EMAIL US
+                                        </div>
+                                        <div class="text-bottom text-bold-700 text-black">
+                                            info@iproperty.com
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-top-5 hidden-xs hidden-sm hidden-md">
+                                    <i class="fa fa-clock-o text-base text-size-30"></i>
+                                    <div class="text">
+                                        <div class="text-top text-bold-400 text-muted text-size-13">
+                                            WE'ARE OPEN
+                                        </div>
+                                        <div class="text-bottom text-bold-700 text-black">
+                                            Mon - Sat, 10AM to 6PM
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hidden-xs hidden-sm">
+                                    <a href="/login" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-15 p-right-15 text-size-11-lg">Submit Property</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /TOPBAR -->
+
+        <!-- NAVIGATION -->
+        <div role="navigation" data-menu="menu-wrapper" class="header-navbar navbar bg-base-dark navbar-fixed box-shadow-3">
+            
+            <!-- MENU CONTENT -->
+            <div data-menu="menu-container" class="container navbar-container main-menu-content">
+
+                <ul id="main-menu-navigation" data-menu="menu-navigation" class="nav navbar-nav">
+                    <li data-menu="dropdown" class="dropdown nav-item active">
+
+                        <a href="/" class="nav-link"><i class=""></i> <span>Home</span></a>
+
+                    </li>
+
+
+
+                    <li data-menu="dropdown" class="dropdown nav-item">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link"><i class="fa fa-users"></i> <span>Agents</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="agents-grid.html" data-toggle="dropdown" class="dropdown-item">Agents - Grid</a>
+                            </li>
+                            <li>
+                                <a href="agents-fullwidth.html" data-toggle="dropdown" class="dropdown-item">Agents - Fullwidth</a>
+                            </li>
+                            <li>
+                                <a href="single-agent.html" data-toggle="dropdown" class="dropdown-item">Single Agent</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li data-menu="dropdown" class="dropdown nav-item">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link"><i class="fa fa-commenting-o"></i> <span>Blog</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-grid.html" data-toggle="dropdown" class="dropdown-item">Blog - Grid</a>
+                            </li>
+                            <li>
+                                <a href="blog-fullwidth.html" data-toggle="dropdown" class="dropdown-item">Blog - Fullwidth</a>
+                            </li>
+                            <li>
+                                <a href="single-blog.html" data-toggle="dropdown" class="dropdown-item">Single Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="shortcodes.html" class="nav-link"><i class="fa fa-cogs"></i> <span>Shortcodes</span></a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /MENU CONTENT -->
+
+        </div>
+        <!-- /NAVIGATION -->
+
+    </header>
+    <!-- End: HEADER -
+    ################################################################## -->
+
+    <!--
+    #################################
+        - Begin: PAGE CONTENT -
+    #################################
+    -->
+    <div class="bg-light-3 p-top-80 p-bottom-80">
+        <div class="container">
+
+            <!-- REGISTER -->
+            <div class="row">
+
+                <div class="col-lg-4 col-md-3"></div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn btn-white text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 box-shadow-1 p-top-12 p-bottom-12 p-left-20 p-right-20" href="login.html">Login</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-white text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 active box-shadow-3 p-top-12 p-bottom-12 p-left-20 p-right-20" href="register.html">Register</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-white text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 box-shadow-1 p-top-12 p-bottom-12 p-left-20 p-right-20" href="lost-password.html"><i class="fa fa-lock"></i></a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-pane bg-white p-top-30 p-bottom-30 p-left-30 p-right-30 box-shadow-1">
+                                <h3 class="text-bold-700 text-uppercase m-bottom-20">Register</h3>
+                                <form action="/register" method="post">
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" id="name" class="form-control form-control-lg"
+                                               placeholder="Your Name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-bold-700 text-uppercase text-size-13">Email</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon bg-light-7 border-1 border-light rounded-0 width-40 text-center">
+                                                <i class="fa fa-envelope"></i>
+                                            </div>
+                                            <input type="email" class="form-control form-control-lg rounded-0 bg-light-5 text-size-14"
+                                                   placeholder="Email" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-bold-700 text-uppercase text-size-13">Password</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon bg-light-7 border-1 border-light rounded-0 width-40 text-center">
+                                                <i class="fa fa-lock"></i>
+                                            </div>
+                                            <input type="password" class="form-control form-control-lg rounded-0 bg-light-5 text-size-14"
+                                                   placeholder="Password" name="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group m-top-30">
+                                        <input type="submit" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 m-bottom-10 p-top-12 p-bottom-12 p-left-20 p-right-20" value="Register">
+                                    </div>
+                                    <div class="clearfix">
+                                        <a class="text-base text-base-white-hover" href="login.html">Already have account?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-3"></div>
+
+            </div>
+            <!-- /REGISTER -->
+
+        </div>
+    </div>
+    <!-- End: PAGE CONTENT -
+    ################################################################## -->
+
+    <!--
+    #################################
+        - Begin: FOOTER -
+    #################################
+    -->
+    <footer class="footer">
+        <div class="bg-dark p-top-60 p-bottom-30">
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        <div class="border-1 border-solid border-dark border-top-0 border-left-0 border-right-0 p-bottom-40 m-bottom-40">
+                            
+                            <div class="row">
+                                
+                                <div class="col-md-6">
+                                    <!-- Begin: LOGO -->
+                                    <a class="navbar-brand logo" href="index.html">
+                                        <img class="full-width max-width-140 m-right-10" alt="iProperty" src="/images/logo-white.png">
+                                    </a>
+                                    <span class="text-white">/ Real Buying Selling Property House</span>
+                                    <!-- End: LOGO -->
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <!-- Begin: SOCIAL -->
+                                    <ul class="social-icons m-top-15 text-right">
+                                        <li>
+                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- End: SOCIAL -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="m-bottom-30">
+                            
+                            <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Recently Viewed</h5>
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <ul class="media-list">
+                                        <li>
+                                            <img alt="..." class="media-img" src="/images/property/property-1-150x130.jpg">
+                                            <div class="media-content">
+                                                <h5 class="text-bold-700 text-base">$250,000</h5>
+                                                <h6><a class="text-white text-base-hover" href="#">Beautiful Small Apartment</a></h6>
+                                                <p class="address text-muted">253 Lake Washington, USA</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img alt="..." class="media-img" src="/images/property/property-2-150x130.jpg">
+                                            <div class="media-content">
+                                                <h5 class="text-bold-700 text-base">$120,000</h5>
+                                                <h6><a class="text-white text-base-hover" href="#">Beautiful Garaes Condo</a></h6>
+                                                <p class="address text-muted">154 Drive, New York</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img alt="..." class="media-img" src="/images/property/property-3-150x130.jpg">
+                                            <div class="media-content">
+                                                <h5 class="text-bold-700 text-base">$145,000</h5>
+                                                <h6><a class="text-white text-base-hover" href="#">Global Land House</a></h6>
+                                                <p class="address text-muted">110 Lake, United Kingdom</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="m-bottom-30">
+                            
+                            <h5 class="text-bold-700 m-bottom-26 text-white text-uppercase">Popular Countries</h5>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+
+                                    <ul class="icon-list m-bottom-20">
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">France</a>
+                                            <span class="text-base float-right">(10)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">United States</a>
+                                            <span class="text-base float-right">(20)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">China</a>
+                                            <span class="text-base float-right">(12)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">Spain</a>
+                                            <span class="text-base float-right">(15)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">Poland</a>
+                                            <span class="text-base float-right">(25)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">Italy</a>
+                                            <span class="text-base float-right">(10)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">Turkey</a>
+                                            <span class="text-base float-right">(20)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">United Kingdom</a>
+                                            <span class="text-base float-right">(12)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">Germany</a>
+                                            <span class="text-base float-right">(15)</span>
+                                        </li>
+                                        <li>
+                                            <i class="btn btn-base fa fa-angle-double-right"></i>
+                                            <a class="text-white text-base-hover" href="#">Singapore</a>
+                                            <span class="text-base float-right">(25)</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12">
+                        <div class="m-bottom-30">
+                            
+                            <div class="row">
+
+                                <div class="col-lg-12 col-md-6">
+                                    <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Contact Us</h5>
+
+                                    <div class="row m-bottom-20">
+                                        <div class="col-md-12">
+                                            
+                                            <p class="text-white">Address: 253 Lake Washington, USA</p>
+                                            <p class="text-white">Phone: (123) 123-456</p>
+                                            <p class="text-white">E-Mail: <a class="text-base border-1 border-dotted border-light border-top-0 border-left-0 border-right-0" href="#">office@example.com</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-6">
+                                    
+                                    <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Newsletter</h5>
+
+                                    <div class="row m-bottom-20">
+                                        <div class="col-md-12">
+                                            
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control form-control-lg rounded-0 bg-white text-size-14" placeholder="Enter your email">
+                                                        <button type="submit" class="input-group-addon btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13  p-top-12 p-bottom-12 p-left-20 p-right-20"><i class="fa fa-envelope"></i></button>
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted">Subscribe to our newsletter and we will inform you about newset projects and promotions</p>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-base p-top-30 p-bottom-20">
+            <div class="container">
+                <p class="text-white m-bottom-6">© Copyright 2017 <a class="text-white border-1 border-dotted border-light border-top-0 border-left-0 border-right-0" href="index.html">iProperty</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End: FOOTER -
+    ################################################################## -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/vendors/appear/jquery.appear.min.js"></script>
+    <script src="/vendors/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/vendors/common/common.min.js"></script>
+
+    <!-- MAIN MENU -->
+    <script src="/vendors/menu/js/vendors-menu.min.js"></script>
+    <script src="/vendors/menu/js/jquery.sticky.js"></script>
+    <script src="/vendors/menu/js/app-menu.js"></script>
+
+    <!-- MAP -->
+    <script src="/vendors/gmap/jquery.axgmap.js"></script>
+
+    <!-- MASONRY -->
+    <script src="/vendors/isotope/jquery.isotope.min.js"></script>
+
+    <!-- OWL CAROUSEL SLIDER -->
+    <script src="/vendors/owl.carousel/js/owl.carousel.min.js"></script>
+
+    <!-- SILCK SLIDER -->
+    <script src="/vendors/slick/slick.js"></script>
+
+    <!-- FANCY BOX -->
+    <script src="/vendors/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- FILE-UPLOADER -->
+    <script src="/vendors/fileuploader/js/jquery.fileuploader.min.js"></script>
+    <script src="/vendors/fileuploader/js/custom.js"></script>
+
+    <!-- THEME-CUSTOM -->
+    <script src="/js/main.js"></script>
+    
+    <!-- THEME-INITIALIZATION-FILES -->
+    <script src="/js/theme.init.js"></script>
+
+    <script src="../maps/api/js?key=AIzaSyAhpYHdYRY2U6V_VfyyNtkPHhywLjDkhfg"></script>
+    <script>
+        // Markers
+        $("#googlemapsMarkers").gMap({
+            controls: {
+                draggable: (($.browser.mobile) ? false : true),
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true
+            },
+            scrollwheel: false,
+            markers: [{
+                address: "217 Summit Boulevard, Birmingham, AL 35243",
+                html: "<strong>Alabama Office</strong><br>217 Summit Boulevard, Birmingham, AL 35243",
+                icon: {
+                    image: "/images/map/pin.png",
+                    iconsize: [54, 55],
+                    iconanchor: [12, 46]
+                }
+            },{
+                address: "645 E. Shaw Avenue, Fresno, CA 93710",
+                html: "<strong>California Office</strong><br>645 E. Shaw Avenue, Fresno, CA 93710",
+                icon: {
+                    image: "/images/map/pin.png",
+                    iconsize: [54, 55],
+                    iconanchor: [12, 46]
+                }
+            },{
+                address: "New York, NY 10017",
+                html: "<strong>New York Office</strong><br>New York, NY 10017",
+                icon: {
+                    image: "/images/map/pin.png",
+                    iconsize: [54, 55],
+                    iconanchor: [12, 46]
+                }
+            }],
+            latitude: 37.09024,
+            longitude: -95.71289,
+            zoom: 3
+        });
+    </script>
+
+    <!-- SWITCHER | BEGIN -->
+    <div class='style-switcher' id='style-switcher'>
+        <div class='style-switcher-heading'>
+            <!-- SWITCHER COLORS -->
+            <div class='custom_icon'>
+                <i class='fa fa-cog c_rotating text-base'></i>
+            </div>
+        </div>
+        <div class='style-switcher-body'>
+            <div class='style-switcher-colors'>
+                <div class='style-switcher-title'>Color Scheme</div>
+                <a class='style-switcher-color limegreen' data-switch-target='#colors' data-switch-to='limegreen.css' href='#' title="LimeGreen"></a>
+                <a class='style-switcher-color golden' data-switch-target='#colors' data-switch-to='golden.css' href='#' title="Golden"></a>
+                <a class='style-switcher-color autumn' data-switch-target='#colors' data-switch-to='autumn.css' href='#' title="Autumn"></a>
+                <a class='style-switcher-color blue active' data-switch-default="" data-switch-target='#colors' data-switch-to='blue.css' href='#' title="Blue"></a>
+                <a class='style-switcher-color skyblue' data-switch-target='#colors' data-switch-to='skyblue.css' href='#' title="Skyblue"></a>
+                <a class='style-switcher-color cherry' data-switch-target='#colors' data-switch-to='cherry.css' href='#' title="Cherry"></a>
+                <a class='style-switcher-color orange' data-switch-target='#colors' data-switch-to='orange.css' href='#' title="Orange"></a>
+                <a class='style-switcher-color pink' data-switch-target='#colors' data-switch-to='pink.css' href='#' title="Pink"></a>
+                <a class='style-switcher-color purple' data-switch-target='#colors' data-switch-to='purple.css' href='#' title="Purple"></a>
+                <a class='style-switcher-color alphagreen' data-switch-target='#colors' data-switch-to='alphagreen.css' href='#' title="AlphaGreen"></a>
+            </div>
+            <div class='style-switcher-reset'>
+                <a class='style-switcher-button btn-base' data-switch-target='#style-switcher' data-switch-to='reset:defaults' href='#' title="">Reset to defaults</a>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="/vendors/switcher/css/demo.css" media="all">
+    <script src="/vendors/switcher/js/demo.js"></script>
+    <script src="/vendors/switcher/js/jquery.cookie.js"></script>
+    <!-- SWITCHER | END -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70250779-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    </body>
+</html>
