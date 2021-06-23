@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/jquery-3.6.0.js"></script>
+</head>
+<body>
+
+<div>
+    <form>
+        name: <input id="name" type="text"> <br>
+        surname: <input id="surname" type="text"><br>
+        email: <input id="email" type="text"><br>
+        password: <input id="password" type="password"><br>
+        <input type="button" id="submitForm" value="submit" onclick="formValidation()">
+    </form>
+
+    <button id="getToDo">Click me!</button>
+</div>
+
+<p id="info"></p>
+<div id="todos" style="width: 100%">
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+        // setInterval(function () {
+        //     alert("kuku");
+        // }, 3000);
+
+        $('#getToDo').on('click', function () {
+            $.ajax({
+                url: "http://localhost:8080/todo",
+                method: "GET",
+                success: function (data) {
+                    // var todos = JSON.parse(result);
+                    $.each(data, function (i, val) {
+                        let completed = val.completed
+                        let backgroundColor = completed ? "background-color: green" : "background-color: white"
+                        var result = "<div style='width: 10%; float: left; border: 1px solid black;" + backgroundColor + "'>"
+                            + val.title +
+                            "</div>"
+                        $('#todos').append(result);
+                    })
+                }
+            });
+        })
+
+    })
+
+    function formValidation() {
+        let name = document.getElementById('name').value;
+        let surname = document.getElementById('surname').value;
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        let errorMessage = "";
+
+        if (name == null || name.length < 2) {
+            errorMessage += "<span style='color: red'>name is required and length should be > 2</span> <br>";
+        }
+        if (surname == null || surname.length < 2) {
+            errorMessage += "<span style='color: red'>surname is required and length should be > 2</span> <br>";
+        }
+
+        if (email == null || !validateEmail(email)) {
+            errorMessage += "<span style='color: red'>email is required and email should be email</span> <br>";
+        }
+
+        if (password == null || password.length < 6) {
+            errorMessage += "<span style='color: red'>password is required and password length should be > 6</span> <br>";
+        }
+
+    }
+
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+</script>
+
+</body>
+</html>
